@@ -1,0 +1,22 @@
+[project]
+name = "ai-test-qa"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Forgotten Lian", email = "forgottenlian@ukr.net" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain-core>=1.8.0",
+    "langchain-huggingface>=1.2.3",
+    "langchain-text-splitters>=1.1.3",
+    "sentence-transformers>=6.3.0",
+]
+
+[project.scripts]
+ai-test-qa = "ai_test_qa:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
