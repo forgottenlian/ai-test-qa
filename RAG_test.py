@@ -56,7 +56,7 @@ def ask(question: str):
 
 
 # Test it
-# ask("What does the main function do?")
+ask("What does the main function do?")
 ask("How do I run this program?")
-# ask("What is the purpose of this application?")
-# ask("What is the name of this application?")
+ask("What is the purpose of this application?")
+ask("What is the name of this application?")
