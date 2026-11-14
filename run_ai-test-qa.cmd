@@ -1,1 +1,1 @@
-uv run ai-test-qa
+uv run ai-test-qa %1 %2
