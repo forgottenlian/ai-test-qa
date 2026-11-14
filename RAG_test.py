@@ -16,7 +16,7 @@ def load_text_file(file_path: str | Path) -> Document:
 
 docs = []
 docs.append(load_text_file(Path("src") / "ai_test_qa" / "__init__.py"))
-docs.append(load_text_file("README.md"))
+docs.append(load_text_file(Path("README.md")))
 print(f"Loaded {len(docs)} documents")
 
 # -------------------------------------------------
