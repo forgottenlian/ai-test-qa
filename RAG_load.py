@@ -12,6 +12,6 @@ vectorstore = InMemoryVectorStore.load("vectorstore.json", embeddings)
 retriever = vectorstore.as_retriever(search_kwargs={"k": 1})
 
 # 3. Query immediately without re-indexing files
-results = retriever.invoke("How do I run this program?")
+results = retriever.invoke("On what program language this project is written?")
 for doc in results:
     print(doc.page_content)

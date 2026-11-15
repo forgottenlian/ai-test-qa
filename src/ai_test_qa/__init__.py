@@ -1,5 +1,5 @@
 import argparse
-from .LoadProjectDocuments import load_project_files
+from .LoadProjectDocuments import load_project_files, save_documents_to_vectorstore
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -17,3 +17,6 @@ def main(argv: list[str] | None = None) -> None:
 
 def load_project(folder_path: str) -> None:
     print(f"Loading project documents from '{folder_path}'...")
+    documents = load_project_files(folder_path)
+    print(f"Loaded {len(documents)} documents.")
+    save_documents_to_vectorstore(documents, "vectorstore.json")
